@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Gelik">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:alpha="0.7"
+        app:srcCompat="@drawable/gelik"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="67dp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="322dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:text="Информация о Геленджике"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="605dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView18"
+        tools:layout_editor_absoluteX="-3dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="589dp"
+            android:background="#8BFFFFFF"
+            android:text="Геленджик расположен вокруг живописной бухты, где вода прогревается уже к середине мая и остывает только к ноябрю, а сильного волнения никогда не бывает. Поэтому город идеально подходит для пляжного отдыха. Пляжи делятся на естественные галечные и искусственные песчаные. Там, где нет пологого входа в воду, обустроены лесенки или понтоны. На диких пляжах в стороне от бухты входить в море труднее, но зато они очень живописны: вдоль берега тянутся отвесные меловые скалы. На курорте действуют три аквапарка, две канатные дороги, различные аттракционы и развлекательные комплексы. В долине реки Жане есть минеральные источники. Там же находится и Долина дольменов. Это очень древние культовые постройки, сложенные из камней, и дорога к ним является одним из самых популярных экскурсионных маршрутов курорта."
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="57dp" />
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="316dp"
+        android:layout_marginTop="20dp"
+        android:onClick="back"
+        android:text="Назад"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+</androidx.constraintlayout.widget.ConstraintLayout>

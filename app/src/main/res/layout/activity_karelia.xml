@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Karelia">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="288dp"
+        android:layout_marginTop="28dp"
+        android:onClick="OnClick"
+        android:text="Назад"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/karelia"
+        tools:layout_editor_absoluteX="-48dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ScrollView
+        android:id="@+id/textView15"
+        android:layout_width="386dp"
+        android:layout_height="604dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        tools:layout_editor_absoluteX="3dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="589dp"
+            android:background="#8BFFFFFF"
+            android:text="Карелию называют «краем тысячи рек и озер». Сейчас в это трудно поверить, но именно здесь, на северо-западе России, а не на солнечном юге, появился самый первый в стране лечебно-оздоровительный курорт. Его основал в 1719 году Петр Великий, благодаря тому, что здесь нашли богатые железом минеральные источники. Курорт назвали «Марциальные воды». Сегодня на его месте находится современный санаторий с тем же названием, а в округе — еще несколько лечебных центров. Главной особенностью карельских курортов являются уникальные процедуры с применением шунгита. Это одна из древнейших горных пород на планете. Она считается целебной, в виде залежей встречается только здесь. Не менее целебным воздействием обладают и природные богатства края, который из-за обилия лесов называют также «легкими Европы». А венец всего — его духовные сокровища, известные всему миру: деревянные церкви в Кижах, монастыри Валаама и Соловков. Если не получилось туда добраться из Санкт-Петербурга, то Карелия дает еще один шанс."
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="57dp" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="272dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="6dp"
+        android:text="Информация о Карелии"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
